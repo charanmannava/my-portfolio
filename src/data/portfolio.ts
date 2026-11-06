@@ -208,16 +208,16 @@ export const achievements: Achievement[] = [
   },
   {
     id: 'competitive-coding',
-    title: '850+ Problems Solved',
+    title: '250+ Problems Solved',
     org: 'LeetCode • GFG • CodeChef',
-    detail: 'LeetCode: 350+ DSA problems (peak rating 1442). GFG: 300+ problems (rating 1436). CodeChef: 200+ problems.',
+    detail: 'Solved 250+ problems across LeetCode, GeeksforGeeks, and CodeChef.',
     laurel: 'Competitive Coding',
   },
   {
     id: 'hackerrank',
-    title: '5-Star Badges',
+    title: '3-Star Badges',
     org: 'HackerRank',
-    detail: '5-star badges in C, Python, Java, and SQL.',
+    detail: '3-star badges in C, Python, Java, and SQL.',
     laurel: 'Four Languages',
   },
 ];
@@ -333,9 +333,9 @@ export const skillCategories: SkillCategory[] = [
  * where the skill appears in the projects, certifications or achievements on the resume.
  */
 export const skillEvidence: Record<string, string[]> = {
-  Java: ['Oracle Java Certified Foundations Associate', 'HackerRank 5-star'],
-  Python: ['PolicyGuard AI', 'Cisco Python Essentials 1', 'HackerRank 5-star'],
-  C: ['HackerRank 5-star'],
+  Java: ['Oracle Java Certified Foundations Associate', 'HackerRank 3-star'],
+  Python: ['PolicyGuard AI', 'Cisco Python Essentials 1', 'HackerRank 3-star'],
+  C: ['HackerRank 3-star'],
   React: ['Payment Gateway System', 'Multi-Tenant SaaS Platform'],
   HTML: ['Pearson IT Specialist – HTML and CSS', 'Cisco HTML Essentials'],
   CSS: ['Pearson IT Specialist – HTML and CSS', 'Cisco CSS Essentials'],
@@ -351,7 +351,7 @@ export const skillEvidence: Record<string, string[]> = {
   PostgreSQL: ['Payment Gateway System', 'Multi-Tenant SaaS Platform'],
   MongoDB: ['MongoDB Certified Associate Developer'],
   DBMS: ['NPTEL Database Management System', 'Oracle Database Foundations'],
-  DSA: ['Nokia Hackathon 2025 Semi-Finalist', 'GeeksforGeeks Hackathon 2024 Semi-Finalist', '850+ problems solved'],
+  DSA: ['Nokia Hackathon 2025 Semi-Finalist', 'GeeksforGeeks Hackathon 2024 Semi-Finalist', '250+ problems solved'],
   'Cloud Computing (AWS)': ['AWS Certified AI Practitioner', 'AWS Academy Cloud Foundations'],
   'Machine Learning': ['B.Tech AI & ML', 'NPTEL Deep Learning'],
 };
@@ -421,9 +421,9 @@ export const seasons: Season[] = [
       {
         code: 'S02 E03',
         title: 'The Problem Solver',
-        description: 'LeetCode 350+ (peak 1442), GFG 300+ (1436), CodeChef 200+ and HackerRank 5-star badges in C, Python, Java and SQL.',
+        description: 'Solved 250+ problems across LeetCode, GeeksforGeeks, and CodeChef, and earned HackerRank 3-star badges in C, Python, Java, and SQL.',
         tags: ['DSA', 'LeetCode', 'GFG', 'CodeChef', 'HackerRank'],
-        runtime: '850+ problems',
+        runtime: '250+ problems',
         palette: jade,
       },
     ],
@@ -519,7 +519,7 @@ export const topPicks: TopPick[] = [
   { label: 'Hackathon', title: 'GeeksforGeeks 2024', detail: 'Semi-Finalist', palette: violet },
   { label: 'Certificate achievement', title: 'Red Hat EAD', detail: '889/1000 · Top 2%', palette: jade },
   { label: 'Cloud credential', title: 'AWS AI Practitioner', detail: 'AWS Certified', palette: amber },
-  { label: 'Problems solved', title: '850+', detail: 'LeetCode 350+ • GFG 300+ • CodeChef 200+', palette: crimson },
+  { label: 'Problems solved', title: '250+', detail: 'Across LeetCode, GeeksforGeeks & CodeChef', palette: crimson },
   { label: 'The internship', title: 'Web Developer', detail: 'iNeuBytes · Jul–Dec 2024', palette: ocean },
   { label: 'Database credential', title: 'MongoDB', detail: 'Certified Associate Developer', palette: jade },
   { label: 'Current focus', title: 'System Design', detail: 'with Cloud (AWS) & Machine Learning', palette: violet },
