@@ -38,13 +38,13 @@ export default function Hero({ onPlay, onResume, profileId }: { onPlay: () => vo
 
   const meta = [
     education[0].period,
-    'B.Tech ECS',
+    'B.Tech ECSE',
     `${projects.length} Originals`,
     `${certifications.length} Certifications`,
   ];
 
   const floating = [
-    { text: education[0].score, sub: 'B.Tech ECS · AI/ML', pos: 'left-[2%] top-[30%]', depth: 1 },
+    { text: education[0].score, sub: 'B.Tech ECSE', pos: 'left-[2%] top-[30%]', depth: 1 },
     { text: `${achievements[0].title}`, sub: achievements[0].org, pos: 'right-[0%] top-[18%]', depth: -1 },
     { text: 'Java · React · Node.js', sub: 'Primary stack', pos: 'right-[4%] bottom-[24%]', depth: 0.6 },
   ];

@@ -7,10 +7,10 @@ export const resume = {
     'Backend-focused software engineer building AI-powered products and scalable backend systems. Experienced with Python, FastAPI, Java, Spring Boot, REST APIs, MongoDB, SQL, and JWT-secured services. Currently optimizing AI-agent workflows and backend services for an AI fitness application and an animated cricket game for mobile and tablet platforms.',
   education: [
     {
-      school: 'Koneru Lakshmaiah Education Foundation (KL University)',
-      place: 'Vaddeswaram, Andhra Pradesh',
-      degree: 'B.Tech in Electronics and Computer Science',
-      period: '2022 – 2026',
+      school: 'KL University',
+      place: 'Guntur',
+      degree: 'B.Tech ECSE',
+      period: 'August 2022 – May 2026',
       score: 'CGPA 8.92',
       coursework:
         'Data Structures & Algorithms, OOP, DBMS, Operating Systems, Computer Networks, Distributed Systems, Software Engineering, Systems Design, Machine Learning',

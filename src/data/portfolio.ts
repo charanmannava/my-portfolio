@@ -40,10 +40,10 @@ export function getEmailComposeUrl(subject?: string) {
 
 export const education = [
   {
-    school: 'Koneru Lakshmaiah Education Foundation (KL University)',
-    place: 'Vaddeswaram, Andhra Pradesh',
-    degree: 'B.Tech in Electronics and Computer Science, specializing in Artificial Intelligence & Machine Learning',
-    period: '2022 – 2026',
+    school: 'KL University',
+    place: 'Guntur',
+    degree: 'B.Tech ECSE',
+    period: 'August 2022 – May 2026',
     score: 'CGPA 8.92',
   },
   {
@@ -400,14 +400,14 @@ export const seasons: Season[] = [
     number: 2,
     title: 'Enter: AI & ML',
     period: '2022 – 2026',
-    synopsis: 'B.Tech in Electronics and Computer Science, specializing in Artificial Intelligence and Machine Learning.',
+    synopsis: 'B.Tech ECSE at KL University, Guntur.',
     episodes: [
       {
         code: 'S02 E01',
         title: 'The Engineer',
-        description: 'B.Tech in Electronics and Computer Science, specializing in Artificial Intelligence and Machine Learning — CGPA 8.92.',
-        tags: ['B.Tech ECS', 'AI & ML', 'CGPA 8.92'],
-        runtime: '2022 – 2026',
+        description: 'B.Tech ECSE at KL University, Guntur — August 2022 to May 2026. CGPA 8.92.',
+        tags: ['B.Tech ECSE', 'CGPA 8.92'],
+        runtime: 'Aug 2022 – May 2026',
         palette: violet,
       },
       {
@@ -531,9 +531,9 @@ export type IntroSlide = { kicker: string; title: string; lines: string[]; chips
 export const introSlides: IntroSlide[] = [
   {
     kicker: 'Education',
-    title: 'B.Tech · AI & ML',
-    lines: ['Aditya Engineering College, Surampalem', 'October 2023 – Present'],
-    chips: ['CGPA 9.10'],
+    title: 'B.Tech · ECSE',
+    lines: ['KL University, Guntur', 'August 2022 – May 2026'],
+    chips: ['CGPA 8.92'],
   },
   {
     kicker: 'Skills',
