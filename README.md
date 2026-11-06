@@ -1,95 +1,89 @@
-# SUSHMITA — THE SERIES
+# Charan Mannava — The Series
 
-A cinematic, streaming-inspired portfolio for **Sushmita Dasari**: Full-Stack Developer and B.Tech AI & ML student.
-Every section is an episode, every project is an Original, and the whole site plays like a series.
+A cinematic, streaming-inspired portfolio for **Charan Mannava**, a B.Tech Electronics and Computer Science student specializing in Artificial Intelligence and Machine Learning, and a full-stack developer.
 
-> A personal portfolio with a fictional streaming-platform look. It is not affiliated with Netflix or any other streaming service and uses none of their logos.
+The portfolio presents education and experience as episodes, projects as Originals, and achievements as award cards. It is a personal portfolio, is not affiliated with any streaming service, and does not use their logos.
 
-## Run it locally
+## Features
 
-Requires **Node.js 18+**.
+- Animated opening sequence, profile selector, and cinematic hero
+- Journey presented as seasons and episodes
+- Project cards with detailed project views and GitHub links
+- Skills, achievements, and certification cards with liquid-glass hover effects
+- Resume preview, PDF viewer, and download
+- Contact links, including Gmail compose links for email
+- Responsive portrait images and social-sharing image
+- Reduced-motion support, keyboard-accessible controls, and touch-friendly rails
+
+## Tech stack
+
+React 18 · TypeScript · Vite 6 · Tailwind CSS 4 · Framer Motion 11 · Lenis
+
+## Run locally
+
+Requires Node.js 18 or later.
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open the URL Vite prints (usually http://localhost:5173).
+Open the local URL printed by Vite (usually `http://localhost:5173`).
 
-Production build:
+Create and preview a production build:
 
 ```bash
 npm run build
 npm run preview
 ```
 
-The static site is written to `dist/` and can be deployed as-is to Vercel, Netlify, GitHub Pages or any static host.
+The production site is written to `dist/`.
 
-## Updating the content
+## Deploy to Vercel
 
-**All content lives in one file: [`src/data/portfolio.ts`](src/data/portfolio.ts).** It was generated from the resume, and every component reads from it.
+1. Push the project to a GitHub repository and import that repository in Vercel.
+2. Select **Vite** as the framework preset, or use these project settings:
+   - Build command: `npm run build`
+   - Output directory: `dist`
+   - Install command: `npm install`
+3. Deploy. No environment variables are required.
 
-| To change… | Edit |
+## Update content and assets
+
+| Content | File |
 | --- | --- |
-| Name, intro, email, LinkedIn, GitHub | `profile` |
-| A project, or a new one | `projects` (add an object; it appears in Originals, the overlay, the resume sheet and the counts) |
-| Achievements / certifications | `achievements`, `certifications` |
-| Skills and their "where it's used" notes | `skillCategories`, `skillEvidence` |
-| Seasons and episodes (My Journey) | `seasons` |
-| Top 10 row | `topPicks` |
-| ▶ Play Intro highlight reel | `introSlides` |
-| Profile order (Recruiter / Developer / Creative) | `viewerProfiles` |
-| Opening studio card text | `profile.originalLabel` |
+| Name, intro, contact links, education, experience, projects, achievements, skills, seasons, and featured picks | [`src/data/portfolio.ts`](src/data/portfolio.ts) |
+| Resume preview content | [`src/data/resume.ts`](src/data/resume.ts) |
+| Resume PDF | `public/assets/charanmann_resume.pdf` |
+| Portrait source images | `pic1.jpeg` and `pic.png` |
+| Image generation and social-share graphic | [`scripts/build-images.mjs`](scripts/build-images.mjs) |
 
-**Resume:** replace `public/assets/charanmann_resume.pdf`.
-
-**Photo:** replace `pic1.jpeg` (high-res photo) and `pic.png` (background-removed cutout with the same framing), then run:
+To regenerate the optimized portrait WebP files and Open Graph image after replacing the source photos:
 
 ```bash
 npm run images
 ```
 
-This rebuilds the responsive WebP portraits and the social share image in `public/assets/`.
+The script writes the generated images to `public/assets/`.
 
-## What's inside
+## Project structure
 
-```
+```text
 src/
-  data/portfolio.ts        ← single source of truth (from the resume)
-  App.tsx                  ← stages: opening → profile select → home; overlays
-  components/
-    OpeningSequence        ← black → studio card → SUSHMITA → THE SERIES → portrait → ▶ PLAY
-    ProfileSelector        ← "Who's watching?" (changes section order only)
-    Navbar                 ← hide-on-scroll nav, profile switcher, mobile menu
-    Hero                   ← billboard: parallax portrait, particles, light streaks, floating chips
-    PlayIntro              ← ▶ Play Intro: zoom into portrait → highlight reel (pause, ← →, tap zones)
-    ContinueWatching       ← cards with real "watched" progress bars
-    About                  ← The Pilot
-    Seasons / EpisodeCard  ← My Journey as seasons and episodes
-    Originals / ProjectCard← pinned horizontal sequence on desktop, swipe rail on touch
-    ProjectModal           ← full-screen project overlay with a shared-element transition
-    TopPicks               ← Top 10-style row
-    Skills                 ← skill genres; each card shows where the skill appears
-    Achievements           ← award-poster cards + certification rail (links to credentials)
-    ResumeViewer/ResumeModal ← designed resume sheet, PDF viewer, download
-    FinalCTA               ← TO BE CONTINUED… + contact links
-    CustomCursor, fx.tsx   ← cursor states, magnetic buttons, 3D tilt, text reveals, particles
-  hooks/                   ← Lenis smooth scroll + scroll lock, media queries, watch progress
-scripts/build-images.mjs   ← portrait/share-image pipeline (sharp)
+  data/
+    portfolio.ts       Main portfolio content
+    resume.ts          Resume-sheet content
+  components/          Portfolio sections, cards, and overlays
+  hooks/               Smooth scrolling and media-query hooks
+scripts/
+  build-images.mjs     Portrait and social-share image pipeline
+public/
+  assets/              Resume PDF, portrait variants, and Open Graph image
 ```
-
-**Stack:** React 18, TypeScript, Vite 6, Tailwind CSS 4, Framer Motion 11, Lenis.
 
 ## Accessibility and performance
 
-- `prefers-reduced-motion` is respected: smooth scroll, the custom cursor, tilt, particles, grain and the pinned horizontal scroll turn off, and the opening jumps straight to its final frame.
-- Hover effects only run on devices with a precise pointer. Touch devices get tap interactions and native swipe rails.
-- The custom cursor appears only with a mouse or trackpad.
-- Overlays close with Esc, and the highlight reel supports Space and the ← → keys.
-- Portraits are responsive WebP files (25–90 KB). Overlays are code-split, and particles pause when they're off screen.
-
-## Keyboard shortcuts
-
-- **Opening:** Enter or Esc skips it.
-- **Play Intro:** Space pauses, ← and → change slides, Esc closes.
-- **Project and resume overlays:** Esc closes.
+- Respects `prefers-reduced-motion`.
+- Uses native swipe rails on touch devices and disables mouse-only cursor effects where appropriate.
+- Supports keyboard shortcuts: Enter or Escape skips the opening, Space pauses the intro, arrow keys navigate intro slides, and Escape closes overlays.
+- Lazy-loads overlay components and uses responsive WebP portrait variants.
