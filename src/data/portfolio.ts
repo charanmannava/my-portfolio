@@ -567,7 +567,7 @@ export const introSlides: IntroSlide[] = [
   },
 ];
 
-export type ProfileId = 'sushmita' | 'recruiter' | 'developer' | 'creative';
+export type ProfileId = 'charan' | 'recruiter' | 'developer' | 'creative';
 export type SectionId = 'about' | 'journey' | 'originals' | 'picks' | 'skills' | 'moments' | 'story';
 
 export const viewerProfiles: {
@@ -578,7 +578,7 @@ export const viewerProfiles: {
   order: SectionId[];
 }[] = [
   {
-    id: 'sushmita',
+    id: 'charan',
     name: 'Charan Mannava',
     blurb: 'The full series, in order',
     color: '#e5132b',
