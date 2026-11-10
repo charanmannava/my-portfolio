@@ -142,7 +142,7 @@ export const projects: Project[] = [
       { value: '40%', label: 'faster API response' },
       { value: '3×', label: 'throughput under load' },
     ],
-    github: 'https://github.com/charanmannava/Payment-gateway-system-Project',
+    github: 'https://github.com/charanmannava/Payment-Gateway-System',
     palette: { from: '#1a0d02', via: '#8a4a07', to: '#0a0806', accent: '#ffb547' },
     motif: 'flow',
   },
@@ -169,7 +169,7 @@ export const projects: Project[] = [
       { value: '0', label: 'unauthorized-access incidents' },
       { value: '45m → <2m', label: 'environment setup time' },
     ],
-    github: 'https://github.com/charanmannava/Multi-Tenant-SaaS-Platform',
+    github: 'https://github.com/charanmannava/Multi-Tenant-SaaS-Platform-main',
     palette: { from: '#04121f', via: '#0f4c6e', to: '#05080d', accent: '#4cc9ff' },
     motif: 'tenants',
   },
@@ -181,7 +181,6 @@ export type Achievement = {
   org: string;
   detail: string;
   laurel: string;
-  link?: string;
 };
 
 export const achievements: Achievement[] = [
@@ -222,25 +221,25 @@ export const achievements: Achievement[] = [
   },
 ];
 
-export type Certification = { issuer: string; name: string; link: string };
+export type Certification = { issuer: string; name: string };
 
 export const certifications: Certification[] = [
-  { issuer: 'NPTEL', name: 'Database Management System', link: 'https://drive.google.com/file/d/1MqkJHchXeaGD4S8mzPmEGxEYddAsxAjN/view?usp=drive_link' },
-  { issuer: 'NPTEL', name: 'Fundamentals of Artificial Intelligence', link: 'https://drive.google.com/file/d/1GqyUQ-lrE-bHaN457t6fIdssgGG4HMXf/view?usp=drive_link' },
-  { issuer: 'NPTEL', name: 'Deep Learning', link: 'https://drive.google.com/file/d/1PWSRP5SQDPzkoTCF3A24eIJoSpTwgsff/view?usp=sharing' },
-  { issuer: 'AWS', name: 'AWS Certified AI Practitioner', link: 'https://drive.google.com/file/d/1h8e5p0a9T6f5gBaOP2ROfwWHZfkkspGn/view?usp=drive_link' },
-  { issuer: 'AWS', name: 'AWS Academy Graduate – Cloud Foundations', link: 'https://www.credly.com/badges/2d4810f9-3dbe-444d-99b9-61312ea5e7df/public_url' },
-  { issuer: 'MongoDB', name: 'MongoDB Certified Associate Developer', link: 'https://www.credly.com/badges/fd3362bd-743a-4c4d-a68e-b1fdc5d46811/public_url' },
-  { issuer: 'GitHub', name: 'GitHub Foundations', link: 'https://drive.google.com/file/d/1o0fkCAMRWTg1oMwxlqu6t6wnOpBv66Vq/view?usp=sharing' },
-  { issuer: 'Pearson', name: 'IT Specialist – HTML and CSS', link: 'https://www.credly.com/badges/e4a55298-e396-41d8-a032-283aafe9fab7/public_url' },
-  { issuer: 'Oracle', name: 'Java Certified Foundations Associate', link: 'https://drive.google.com/file/d/1g-yyceHtLg_k2RWiOIJqH0MMcGlaH90P/view?usp=sharing' },
-  { issuer: 'Oracle', name: 'Oracle Certified Foundations Associate – Database', link: 'https://drive.google.com/file/d/10-DzabbcH2vHrI6bAohoT8czKRZMa2kV/view?usp=drive_link' },
-  { issuer: 'Cisco', name: 'HTML Essentials', link: 'https://www.credly.com/badges/eb27ca95-3b2a-4948-bef9-0385d1d49055/public_url' },
-  { issuer: 'Cisco', name: 'CSS Essentials', link: 'https://www.credly.com/badges/3b37497f-6a61-4889-af3c-ed337a460a0b/public_url' },
-  { issuer: 'Cisco', name: 'JavaScript Essentials 1', link: 'https://www.credly.com/badges/9cdd4d55-6ecc-463f-b254-811ccdd0539c/public_url' },
-  { issuer: 'Cisco', name: 'JavaScript Essentials 2', link: 'https://www.credly.com/badges/0e1b036e-4318-4c8e-b750-2aca77314442/public_url' },
-  { issuer: 'Cisco', name: 'Python Essentials 1', link: 'https://www.credly.com/badges/0e21e3eb-d8ef-4770-95d7-dcbd6f8696b1/public_url' },
-  { issuer: 'Udemy', name: 'Microsoft Azure Hands-On Training (AZ-900, AZ-104, AZ-305)', link: 'https://drive.google.com/file/d/1KrXClhY0nJ3Acxs7DioNf4Q1rpaMvgPT/view?usp=sharing' },
+  { issuer: 'NPTEL', name: 'Database Management System' },
+  { issuer: 'NPTEL', name: 'Fundamentals of Artificial Intelligence' },
+  { issuer: 'NPTEL', name: 'Deep Learning' },
+  { issuer: 'AWS', name: 'AWS Certified AI Practitioner' },
+  { issuer: 'AWS', name: 'AWS Academy Graduate – Cloud Foundations' },
+  { issuer: 'MongoDB', name: 'MongoDB Certified Associate Developer' },
+  { issuer: 'GitHub', name: 'GitHub Foundations' },
+  { issuer: 'Pearson', name: 'IT Specialist – HTML and CSS' },
+  { issuer: 'Oracle', name: 'Java Certified Foundations Associate' },
+  { issuer: 'Oracle', name: 'Oracle Certified Foundations Associate – Database' },
+  { issuer: 'Cisco', name: 'HTML Essentials' },
+  { issuer: 'Cisco', name: 'CSS Essentials' },
+  { issuer: 'Cisco', name: 'JavaScript Essentials 1' },
+  { issuer: 'Cisco', name: 'JavaScript Essentials 2' },
+  { issuer: 'Cisco', name: 'Python Essentials 1' },
+  { issuer: 'Udemy', name: 'Microsoft Azure Hands-On Training (AZ-900, AZ-104, AZ-305)' },
 ];
 
 export type Skill = { name: string; mono: string; note?: string };

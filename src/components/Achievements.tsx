@@ -46,17 +46,6 @@ export default function Achievements() {
                 <h3 className="relative mt-6 font-display text-[2.1rem] leading-[0.92] tracking-wide text-bone">{a.title}</h3>
                 <p className="relative mt-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#d9b46a]">{a.org}</p>
                 <p className="relative mt-4 text-[13px] leading-relaxed text-bone/70">{a.detail}</p>
-                {a.link && (
-                  <a
-                    href={a.link}
-                    target="_blank"
-                    rel="noreferrer"
-                    data-cursor="link"
-                    className="relative mt-auto inline-flex min-h-10 items-center gap-1 pt-5 text-xs font-semibold tracking-wide text-bone underline decoration-[#d9b46a]/60 underline-offset-4 hover:decoration-[#d9b46a]"
-                  >
-                    View certificate ↗
-                  </a>
-                )}
               </article>
             </Tilt>
           </motion.div>
